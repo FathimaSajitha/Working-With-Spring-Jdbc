@@ -14,7 +14,7 @@ import com.librarysys.dao.ClassificationDao;
 import com.librarysys.model.Classification;
 
 public class ClassificationDaoImpl implements ClassificationDao {
-	//dependancy
+	//dependancy injection
 		private  DataSource dataSource;
 		
 		public void setDataSource( DataSource dataSource) {

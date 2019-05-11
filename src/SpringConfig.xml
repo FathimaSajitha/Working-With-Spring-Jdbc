@@ -20,4 +20,12 @@
  <bean id="classificationDao" class="com.librarysys.daoImpl.ClassificationDaoImpl">
  <property name="DataSource" ref="dataSource"></property>
  </bean> 
+ 
+ <bean id="authorService" class="com.librarysys.serviceimpl.AuthorServiceImpl"> 
+<property name="AuthorDao" ref="authorDao"></property>
+</bean>
+
+ <bean id="authorDao" class="com.librarysys.daoImpl.AuthorDaoImpl">
+ <property name="DataSource" ref="dataSource"></property>
+ </bean> 
 </beans>  
